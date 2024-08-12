@@ -1,0 +1,62 @@
+.Visa {
+    width: 100dvw;
+
+    .centerText {
+        text-align: center;
+
+        h2 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: $blue;
+        }
+    }
+
+    .flexbox4 {
+        display: flex;
+        width: 100%;
+
+        .flexbox3 {
+            width: 50%;
+
+            .leftIcon {
+                background-color: $white;
+                border-radius: 20px;
+                padding: 1rem;
+                display: grid;
+                grid-template-columns: 30% 70%;
+                margin: 1rem;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+
+                h4 {
+                    color: $blue;
+                }
+            }
+        }
+
+        .images {
+            position: relative;
+            width: 50%;
+
+            .rightImg {
+                position: absolute;
+                right: 0;
+                top: 0;
+                z-index: -1;
+            }
+
+            .leftImg {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+
+
+            }
+
+            .centerArrow {
+                position: absolute;
+                top: 0;
+                left: 40%;
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.topHero {
+    background-color: $white;
+    width: 100dvw;
+
+    nav {
+        @include defaultFlex;
+        background-color: $white;
+        margin: 10px 5px;
+
+        .right,
+        .left {
+            @include defaultFlex;
+
+        }
+
+        .left {
+            font-size: 2rem;
+            color: $blue;
+        }
+
+.right{
+    color: $blue;
+        div {
+            font-weight: 600;
+            span{
+                color: $gray;   
+            }
+        }
+        
+    }
+
+        ul {
+            @include defaultFlex;
+
+            li {
+                list-style: none;
+                text-align: center;
+
+                a {
+                    text-decoration: none;
+                    padding: 1rem;
+                    color: $blue;
+                }
+
+                a:hover {
+                    background-color: $babyBlue;
+                    border-radius: 20px;
+                    color: $white;
+                }
+            }
+
+        }
+    }
+}

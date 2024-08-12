@@ -1,0 +1,55 @@
+.Join {
+    background-color: $backgroundGray;
+
+    .fram {
+
+        margin: 2rem;
+
+        .cards {
+            @include grid3columns;
+            gap: 1rem;
+            margin-bottom: 1rem;
+
+            .cardLeft {
+                background-color: $white;
+                border-radius: 16px;
+                padding-top: 1rem;
+                padding: 1rem;
+
+                .tcard {
+                    font-size: 1.5rem;
+                    color: $blue;
+                }
+            }
+        }
+
+        .buttomBox {
+            padding: 1rem;
+            background-color: $babyBlue;
+            width: 100%;
+            border-radius: 20px;
+            @include defaultFlex;
+            margin-bottom: -231px;
+
+
+            .whiteText {
+                background-image: url(../../../assests/Карта\ 2.svg);
+                color: white;
+                font-size: 3rem;
+                text-align: center;
+
+                p {
+                    font-size: 1rem;
+                }
+
+                input {
+                    background-color: transparent;
+                    border: 1px solid $white;
+                    border-radius: 20px;
+                    width: 70%;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+}

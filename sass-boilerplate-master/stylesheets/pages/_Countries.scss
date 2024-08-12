@@ -1,0 +1,66 @@
+.Countries {
+
+    .centerText {
+        text-align: center;
+
+        h2 {
+            font-size: 3rem;
+        }
+    }
+
+    .big {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        // width: 1200px;
+        width: 90dvw;
+
+        .Options {
+            width: 30%;
+
+            .option {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: $lineGray 1px solid;
+                padding: 1rem;
+
+                .smallTiltle {
+                    color: $boldGray;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                }
+
+                .smallTiltle:hover {
+                    color: $blue;
+
+                }
+            }
+        }
+
+        .flags {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 1rem;
+            width: 70%;
+
+            div {
+
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                border: 1px $lineGray solid;
+                border-radius: 20px;
+                padding: 1rem;
+
+                .countryName {
+                    font-size: 1.5rem;
+                    color: $blue;
+                    text-align: center;
+                    border: none;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

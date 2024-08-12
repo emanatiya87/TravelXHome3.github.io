@@ -1,0 +1,40 @@
+.Testimonial {
+    margin-top: 231px;
+
+    .centerText {
+        text-align: center;
+    }
+
+    .embeded {
+        position: relative;
+        min-height: 611px;
+        width: 1290px;
+        display: flex;
+        align-items: center;
+
+        .paragraph {
+            font-size: 2rem;
+            color: $blue;
+
+
+        }
+
+        .icon {
+            display: flex;
+
+
+            div p {
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: $blue;
+            }
+
+        }
+
+        .bottomPic {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}

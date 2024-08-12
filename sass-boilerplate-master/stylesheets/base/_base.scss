@@ -1,0 +1,45 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+ html {
+  box-sizing: border-box;
+}
+
+.container {
+  @include columnFlex;
+  gap: 7.5rem;
+}
+
+.Lorem {
+  @include GrayParagraph;
+}
+
+.sectionSmallTitle {
+  color: $blue;
+  font-weight: 600;
+}
+
+.sectionTitle,
+.sideTittle {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.sideTittle {
+  color: $blue;
+
+}
+
+.wrapper {
+  @include wrap;
+}
+
+#fonttt {
+  --maincolor: #47db34;
+  background-color: var(--maincolor);
+
+}

@@ -1,0 +1,50 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+@mixin defaultFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin columnFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin GrayParagraph {
+  color: $gray;
+  font-size: 1rem;
+}
+
+@mixin circle {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin wrap {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+@mixin grid3columns {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+@mixin boxShadow{
+  box-shadow: .5rem .5rem $boldGray;
+
+}
+@mixin shadow{
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+
+}

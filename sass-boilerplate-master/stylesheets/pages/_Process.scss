@@ -1,0 +1,54 @@
+.ProcessSec {
+    width: 90dvw;
+    background-color: $backgroundGray;
+    background-image: url(../../../assests/Frame2.svg);
+    border-radius: 20px;
+
+    .Process {
+        margin: 3rem auto;
+        width: 80%;
+
+        .flexbox1 {
+            display: flex;
+            justify-content: space-between;
+
+            h2 {
+                font-size: 3rem;
+                color: $blue;
+            }
+
+            .Lorem {
+                align-self: flex-end;
+            }
+        }
+
+
+        .flexbox2 {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .leftIcon {
+                background-color: $white;
+                border-radius: 20px;
+                width: 30%;
+                padding: .7rem;
+                display: grid;
+                grid-template-columns: 30% 70%;
+                gap: 1rem;
+
+                h4 {
+                    color: $blue;
+                }
+
+                .blueRec {
+                    // width: 35%;
+                    height: 100%;
+                    background-color: $babyBlue;
+                    border-radius: 20px;
+                }
+
+            }
+        }
+    }
+}

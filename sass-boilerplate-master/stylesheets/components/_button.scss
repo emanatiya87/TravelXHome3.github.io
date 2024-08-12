@@ -1,0 +1,54 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.whiteButton {
+    background-color: $white;
+    border: none;
+    color: $blue;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 1rem;
+    @include shadow;
+}
+
+button {
+    background-color: $babyBlue;
+    border: none;
+    color: $white;
+    border-radius: 10rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.circle {
+    @include circle;
+    align-self: center;
+    background-color: $babyBlue;
+
+
+}
+
+.whiteCircile {
+    @include circle;
+@include shadow;
+
+}
+
+.second {
+    text-align: center;
+}
+
+.hello {
+    margin: 1.5rem;
+}
+
+.grayCircle {
+    @include circle;
+    background-color: $boldGray;
+}
+
+.blueCircle {
+    @include circle;
+    background-color: $babyBlue;
+}
+

@@ -1,0 +1,49 @@
+.service {
+    background-color: $backgroundGray;
+    position: relative;
+    height: 90dvh;
+    border-radius: 20px;
+   padding:0 20% ;
+
+    .world {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 30%;
+        height: 100%;
+        border-radius: 20px;
+        background-color: $gray;
+    }
+
+    .title3 {
+        @include defaultFlex;
+
+        .arrows {
+            align-self: flex-end;
+            z-index: 3;
+            display: flex;
+        }
+
+    }
+
+    .cards {
+        @include grid3columns;
+
+        .card {
+            background-color: $white;
+            border-radius: 20px;
+            padding-top: 1rem;
+            padding-bottom: 16px;
+            display: flex;
+            flex-direction: column;
+            z-index: 3;
+
+            .tcard {
+                font-size: 1.5rem;
+                color: $blue;
+            }
+        }
+
+
+    }
+}

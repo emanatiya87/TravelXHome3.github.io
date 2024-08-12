@@ -1,0 +1,30 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+.hero {
+    background-color: $blue;
+    width: 100dvw;
+    // align-items: stretch;
+    @include columnFlex;
+    height: 100dvh;
+
+    text-align: center;
+
+    .box {
+        background-color: rgba(0, 0, 0, .2);
+        background-image: url(../../../assests/Frame\ 8365.svg);
+        @include defaultFlex;
+        color: $white ;
+        height: 100%;
+        width: 100dvw;
+
+        .inner {
+            text-align: center;
+            width: 100dvw;
+
+            .mirg {
+                color: $babyBlue;
+            }
+        }
+    }
+}

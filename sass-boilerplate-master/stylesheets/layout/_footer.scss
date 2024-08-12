@@ -1,0 +1,56 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+footer {
+    background-color: $blue;
+    width: 100dvw;
+    background-image: url(../../../assests/Rectangle\ 5318.svg);
+    background-repeat: no-repeat;
+    color: $white;
+
+
+    .flexbox {
+        padding: 3rem 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        .grid3columns {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 1rem;
+        }
+
+        li {
+            padding: 1rem;
+            list-style: none;
+        }
+    }
+
+    hr {
+        border-color: $lineGray;
+    }
+
+    .flexbox5 {
+        @include defaultFlex;
+        padding: 0 5rem;
+
+
+        ul {
+            @include defaultFlex;
+
+            li {
+                padding: 1rem;
+                list-style: none;
+
+            }
+        }
+    }
+
+
+
+}

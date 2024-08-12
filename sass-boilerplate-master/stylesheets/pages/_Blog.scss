@@ -1,0 +1,57 @@
+.Blog {
+    margin-top: 239px;
+
+    .title3 {
+        display: flex;
+
+        justify-content: space-between;
+
+
+        .arrows {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-self: flex-end;
+        }
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .card {
+            padding: 1rem;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+
+            h3 {
+                font-size: 1.5rem;
+                color: $blue;
+            }
+
+            .date {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .whiteButton {
+                border: 1px solid $babyBlue;
+            }
+
+
+        }
+
+        .card:hover {
+            border: 1px solid $babyBlue;
+
+            button {
+                background-color: $babyBlue;
+                color: $white;
+            }
+        }
+
+
+
+    }
+}

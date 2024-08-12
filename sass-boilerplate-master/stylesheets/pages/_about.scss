@@ -1,0 +1,54 @@
+.about {
+
+    .wrapper {
+        @include wrap;
+
+        .images {
+            position: relative;
+
+            .firstPic {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            .secPic {
+                position: absolute;
+                right: 0;
+                top: 1rem;
+            }
+
+            .blue {
+                position: absolute;
+                background-color: $babyBlue;
+                padding: 1rem 2rem;
+                color: $white;
+                border-radius: 20px;
+                font-size: 1rem;
+                text-align: center;
+                left: 2rem;
+                bottom: 1rem;
+                z-index: 3;
+
+                .ten {
+                    font-size: 3rem;
+                    font-weight: bold;
+                }
+
+            }
+
+            .lastpic {
+                position: absolute;
+                bottom: 1rem;
+                right: 3rem;
+            }
+        }
+
+        .text {
+            .two {
+                @include defaultFlex;
+
+            }
+        }
+    }
+}
